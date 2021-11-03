@@ -3,15 +3,15 @@ package taller3.televisores;
 public class Control {
 	TV tv;
 	
-	
+	public void enlazar(TV tele) {this.tv = tele; tv.setControl(this);}
 
 	public TV getTv() {return tv;}
 
-	public  turnOn() {tv.turnOn();}
-	public  turnOff() {tv.turnOff();}
+	public void turnOn() {tv.turnOn();}
+	public void turnOff() {tv.turnOff();}
 	
-	public  volumenUp() {tv.volumenUp();}
-	public  volumenDown() {tv.volumenDown();}
+	public void volumenUp() {tv.volumenUp();}
+	public void volumenDown() {tv.volumenDown();}
 
 	public void canalUp() {tv.canalUp();}
 	public void canalDown() {tv.canalDown();}
