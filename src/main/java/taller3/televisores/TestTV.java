@@ -18,7 +18,7 @@ public class TestTv {
 		control.volumenUp();
 		System.out.println(tele1.getPrecio());
 	    System.out.println(tele2.getCanal());
-		System.out.println(tele1.getCanal());
+		System.out.println(tele1.getCanal	());
 	    System.out.println(tele1.getMarca().getNombre());
 	}
 }
