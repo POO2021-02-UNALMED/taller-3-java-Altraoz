@@ -1,29 +1,24 @@
 package taller3.televisores;
 
-public class TestTV {
+public class TestTv {
 	public static void main(String[] args) {
-		Marca marca1 = new Marca("Semsung");
-	    Marca marca2 = new Marca("Lj");
-		
-	    TV tv1 = new TV(marca1, true);
-	    TV tv2 = new TV(marca2, false);
-	    
-	    tv1.setPrecio(2000);
-	    tv2.setCanal(90);
-	    tv1.setCanal(121);
-		tv2.setVolumen(7);
-		
-		Control control1 = new Control();
-		control1.enlazar(tv1);
-		control1.turnOff();
-		control1.setCanal(50);
-		control1.turnOn();
-		control1.canalUp();
-		control1.volumenUp();
-		
-	    System.out.println(tv2.getCanal());
-	    System.out.println(tv1.getPrecio());
-	    System.out.println(tv1.getMarca().getNombre());
-	    System.out.println(tv1.getCanal());
+		Marca m1 = new Marca("LGsus");
+	    Marca m2 = new Marca("Akalley");
+	    TV tele1 = new TV(m1, true);
+	    TV tele2 = new TV(m2, false);
+		Control control = new Control();
+		control.enlazar(tele1);
+	    tele1.setPrecio(500000);
+	    tele2.setCanal(10);
+		control.turnOff();
+		control.setCanal(20);
+		control.turnOn();
+		tele2.setVolumen(15);
+		control.canalUp();
+		control.volumenUp();
+		System.out.println(tele1.getPrecio());
+	    System.out.println(tele2.getCanal());
+		System.out.println(tele1.getCanal());
+	    System.out.println(tele1.getMarca().getNombre());
 	}
 }
