@@ -13,11 +13,11 @@ public class Control {
 	public  volumenUp() {tv.volumenUp();}
 	public  volumenDown() {tv.volumenDown();}
 
-	public  canalUp() {tv.canalUp();}
-	public  canalDown() {tv.canalDown();}
+	public void canalUp() {tv.canalUp();}
+	public void canalDown() {tv.canalDown();}
 	
-	public  setCanal(int canal) {tv.setCanal(canal);}
-	public  setTv(TV tv) {this.tv = tv;}
+	public void setCanal(int canal) {tv.setCanal(canal);}
+	public void setTv(TV tv) {this.tv = tv;}
 	
 
 }
