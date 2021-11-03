@@ -25,6 +25,10 @@ public class TV {
 	public static void setTotalTVs(int numero) {totalTVs = numero;}
 	public static int getTotalTVs() {return totalTVs;}
 
+	public boolean getEstado() {return estado;}
+
+	public void turnOn() {estado = true;}
+	public void turnOff() {estado = false;}
 
 	public void canalUp() {if(estado && canal < 120){canal = canal + 1;}}
 	public void canalDown() {if(estado == true && canal > 1){canal = canal - 1;}}
